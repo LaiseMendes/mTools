@@ -1,0 +1,82 @@
+{
+    "scrName": [
+        {
+            "Num": "0", 
+            "btnName": "Combine Uv", 
+            "descName": "Combina meshes e transfere UVs entre elas sem perder o nome dos objs.\nUso: Para dar o combine, criar um grupo (Ex: Heart.grp) que contenha as meshes (Ex: Vein_1, Vein_2). Selecione o grupo e precione o combine.\nO combine ir\u00e1 gerar uma mesh com sufixo \"_Combined\" (Ex: Heart.grp_Comined)\nPara separar, selecione a mesh combinada gerada pelo combine (Ex: Heart.grp_Comined) e o grupo antigo (Ex: Heart.grp), e d\u00ea o separate.", 
+            "fName": "UvTransfer_Combine"
+        }, 
+        {
+            "Num": "1", 
+            "btnName": "RSPC Tools", 
+            "descName": "Ferramenta com 4 micro fun\u00e7\u00f5es: Renomear: renomeia um objeto substituindo \ncaixa alta por caixa baixa nos caracteres Select: seleciona lista de objetos que estiverem com seus nomes na caixa de texto Print: executa \num print da lista de objetos selecionados Combine: Combina objetos, centraliza pivot e exclui historico", 
+            "fName": "selector"
+        }, 
+        {
+            "Num": "2", 
+            "btnName": "Compare List", 
+            "descName": "Compara 1 grupo com uma lista externa (Ex: excel) em texto e exibe em 2 \njanelas o que cada um tem de diferente do outro. \nUso: Selecionar um grupo e clicar em Selection, colar a lista em texto na caixa List e clicar \nno bot\u00e3o LIST, por fim clicar em Compareulti", 
+            "fName": "compareWithList"
+        }, 
+        {
+            "Num": "3", 
+            "btnName": "MultiTools", 
+            "descName": "Ferramenta com 4 micro fun\u00e7\u00f5es: \n General Tools: renomeia objetos \nGroup Tools: compara\u00e7\u00e3o de grupos \nRigging Tools: Cria controlador com constraint atrelado a uma joint. \nAnimation Tools: ?", 
+            "fName": "medToolsDock"
+        }, 
+        {
+            "Num": "4", 
+            "btnName": "Mode Switch", 
+            "descName": "Altera linkagem de constraints para cria\u00e7\u00e3o de poses do retarget", 
+            "fName": "ModeSwitch"
+        }, 
+        {
+            "Num": "5", 
+            "btnName": "Export BS", 
+            "descName": "Exporta Blendshapes", 
+            "fName": "ExportBS"
+        }, 
+        {
+            "Num": "6", 
+            "btnName": "Joint Converter", 
+            "descName": "Converte o(s) objeto(s) (placeholder) selecionado(s) para joint, importante, o(s) objeto(s) ser\u00e1(\u00e3o) exclu\u00eddo(s). \nUso: Selecionar o objeto e executar o script", 
+            "fName": "HolderToJoint"
+        }, 
+        {
+            "Num": "7", 
+            "btnName": "Ik/Fk Blend", 
+            "descName": "Ik/Fk Blend automatico utilizando BlendColor \n Infos: \n Como esse Script usa apenas um BlendColor, ele tamb\u00e9m cria apenas UM IkFkBlend. Isso implica que se for necess\u00e1rio separar os IkFkBlends com nomes diferentes em um mesmo controlador, existem duas op\u00e7\u00f5es: \n1 - Utilize o outro Script (IkFkBlendParent) \n2 - Mude o nome em niceName e longName nas linhas deste c\u00f3digo \n", 
+            "fName": "IkFk_BlendColor"
+        }, 
+        {
+            "Num": "8", 
+            "btnName": "Object LongName", 
+            "descName": "Exibe um Print do long name de um objeto \nUso: Selecionar um objeto e rodar o script", 
+            "fName": "LongNameFetch"
+        }, 
+        {
+            "Num": "9", 
+            "btnName": "Locator Placer", 
+            "descName": "Cria um locator no(s) objeto(s) selecionado sufixo _Loc e o mesmo nome do(s) objeto(s) \nUso: Selecionar objeto(s) e rodar o script", 
+            "fName": "PlaceLoc"
+        }, 
+        {
+            "Num": "10", 
+            "btnName": "Transform Transfer", 
+            "descName": "Transfere posi\u00e7\u00e3o, escala e rota\u00e7\u00e3o aproximada entre objetos similares \ncom topologia diferente (ex. partes do corpo que se movem em reimporta\u00e7\u00e3o). Importante, essa transferencia nao depende de uv ou \ngeometria, por\u00e9m usa lattice e bounding box, objetos muito diferentes podem n\u00e3o dar bons resultados. Este Script pode ser usado em conjunto\n com script para combinar e separar mantendo o nome para mover uma regi\u00e3o inteira. \nUso: Selecionar o objeto na posi\u00e7\u00e3o alvo, selecionar o objeto a ser deformado e rodar o script", 
+            "fName": "positiontransfer"
+        }, 
+        {
+            "Num": "11", 
+            "btnName": "UV Set Transfer", 
+            "descName": "Transfere uvs entre diferentes UVsets em um mesmo objeto, \u00e9 util pois \nfunciona com multiplos objetos selecionados. \nAtualmente script possui nomes dos uvsets definidos no codigo. \nUso: Selecionar o(s) objeto(s) com 2 uvsets e rodar o script.", 
+            "fName": "transferuvset"
+        }, 
+        {
+            "Num": "12", 
+            "btnName": "Nurb Vertex", 
+            "descName": "Cria um objeto temporario no centro da sele\u00e7\u00e3o de vertices (nurbs sphere)\nUso: Selecionar pelo menos 4 vertices e executar o script", 
+            "fName": "VtxCenter"
+        }
+    ]
+}
